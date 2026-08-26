@@ -1,1 +1,410 @@
-{}
+{
+ "1013chestnutlnsuite120matthewsnc28104": {
+  "lat": 35.069759,
+  "lng": -80.6978283,
+  "matched": "Union Family Eye Associates, 1013, Chestnut Lane, Matthews, Union County, North Carolina, 28104, United States"
+ },
+ "1065readingrdmasonoh45040": {
+  "lat": 39.3521519,
+  "lng": -84.3211119,
+  "matched": "Reading Road, Mason, Warren County, Ohio, 45241, United States"
+ },
+ "11406bgeorgiaavesuitebsilverspringmd20902": {
+  "lat": 39.0229238,
+  "lng": -77.0451955,
+  "matched": "Georgia Avenue, Carroll Knolls, Silver Spring, Montgomery County, Maryland, 20902, United States"
+ },
+ "1167providencerd4whitinsvillema01588": {
+  "lat": 42.1028269,
+  "lng": -71.6404571,
+  "matched": "Providence Road, Whitinsville, Northbridge, Worcester County, Massachusetts, 01525, United States"
+ },
+ "120713thstsuiteksnohomishwa98290": {
+  "lat": 47.9270458,
+  "lng": -122.0957774,
+  "matched": "1207, 13th Street, Snohomish Square, Northwest Snohomish, Snohomish, Snohomish County, Washington, 98290, United States"
+ },
+ "12072brookhurststgardengroveca92840": {
+  "lat": 33.7874841,
+  "lng": -117.9585998,
+  "matched": "12072, Brookhurst Street, Koreatown, Garden Grove, Orange County, California, 92840, United States"
+ },
+ "121234avese120calgaryabt2g1v7": {
+  "lat": 51.0237815,
+  "lng": -114.0372916,
+  "matched": "1212, 34 Avenue SE, Highfield, Calgary, Alberta, T2G 1V7, Canada"
+ },
+ "1214ottawastunit201windsoronn8x2e5": {
+  "lat": 42.3097905,
+  "lng": -83.0132664,
+  "matched": "OMAC Mortgages, 1214, Ottawa Street, Walkerville, Windsor, Southwestern Ontario, Ontario, N8X 2E5, Canada"
+ },
+ "12616w62ndterrace117shawneeks66216": {
+  "lat": 39.0152057,
+  "lng": -94.7321298,
+  "matched": "12616, West 62nd Terrace, Shawnee, Johnson County, Kansas, 66216, United States"
+ },
+ "1271rickertdr135napervilleil60540": {
+  "lat": 41.7484255,
+  "lng": -88.1702862,
+  "matched": "Anytime Fitness, 1271, Rickert Drive, Naperville, Naperville Township, DuPage County, Illinois, 60540, United States"
+ },
+ "135samosetstplymouthma02360": {
+  "lat": 41.9536844,
+  "lng": -70.6847534,
+  "matched": "135, Samoset Street, Plymouth, Plymouth County, Massachusetts, 02360, United States"
+ },
+ "1427railroadavebellinghamwa98225": {
+  "lat": 48.7510609,
+  "lng": -122.4758919,
+  "matched": "Aegis Games & Taphouse, 1427, Railroad Avenue, City Center, Bellingham, Whatcom County, Washington, 98225, United States"
+ },
+ "1450oaklandaveindianapa15725": {
+  "lat": 40.6151629,
+  "lng": -79.1675762,
+  "matched": "1450, Oakland Avenue, Getty Heights, Indiana, Indiana County, Pennsylvania, 15701, United States"
+ },
+ "1502parkstalamedaca94501": {
+  "lat": 37.7654238,
+  "lng": -122.2416401,
+  "matched": "1502, Park Street, Alameda, Alameda County, California, 94501, United States"
+ },
+ "15901jeffersondavishwychesterva23834": {},
+ "1615orlansboulevardottawaontariok1c7e2": {
+  "lat": 45.4603277,
+  "lng": -75.5235558,
+  "matched": "K2 Martial Arts, 1615, Orléans Boulevard, Orléans Village - Châteauneuf, Orléans, Orléans West-Innes, Ottawa, Eastern Ontario, Ontario, K1C 2X8, Canada"
+ },
+ "16520southtamiamitrailste146fortmyersfl": {},
+ "18502beachblvdunit120huntingtonbeachca92648": {
+  "lat": 33.6937624,
+  "lng": -117.9890668,
+  "matched": "18502, Beach Boulevard, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+ },
+ "1919peabodyrdvacavilleca95687": {
+  "lat": 38.3370302,
+  "lng": -121.9702041,
+  "matched": "1919, Peabody Road, Vacaville, Solano County, California, 95687, United States"
+ },
+ "2019greenwoodlaketurnpikeunitgwestmilfordnj07421": {
+  "lat": 41.1528385,
+  "lng": -74.3499478,
+  "matched": "2019, Greenwood Lake Turnpike, Browns, West Milford, Passaic County, New Jersey, 07421, United States"
+ },
+ "20514108thavesekentwa98031": {
+  "lat": 47.4183392,
+  "lng": -122.1954925,
+  "matched": "20514, 108th Avenue Southeast, Kent, King County, Washington, 98031, United States"
+ },
+ "20564hallrdclintontownshipmi48038": {
+  "lat": 42.6283134,
+  "lng": -82.9174297,
+  "matched": "20564, Hall Road, Clinton Township, Macomb County, Michigan, 48038, United States"
+ },
+ "207elmirardsuite100ithacany14850": {
+  "lat": 42.4301412,
+  "lng": -76.5034584,
+  "matched": "Welco, 207, Elmira Road, Titus Flats, Ward 1, City of Ithaca, Tompkins County, New York, 14850, United States"
+ },
+ "209emainstcollinsvilleil62234": {
+  "lat": 38.6708409,
+  "lng": -89.9844609,
+  "matched": "209,211, East Main Street, Collinsville, Madison County, Illinois, 62234, United States"
+ },
+ "2172speersrdoakvilleonl6l2x8": {
+  "lat": 43.4135219,
+  "lng": -79.7213663,
+  "matched": "2172, Speers Road, Bronte Station, Bronte, Oakville, Halton Region, Golden Horseshoe, Ontario, L6L 5M2, Canada"
+ },
+ "21smainstipswichma01938": {
+  "lat": 42.6794676,
+  "lng": -70.8371046,
+  "matched": "South Main Street, Ipswich, Essex County, Massachusetts, 01938, United States"
+ },
+ "2220bowenroadnanaimobcv9s1h9": {
+  "lat": 49.1930329,
+  "lng": -123.9920194,
+  "matched": "Kim Key, 2220, Bowen Road, Northfield, Nanaimo, Regional District of Nanaimo, British Columbia, V9S 1H9, Canada"
+ },
+ "2301spenardrdanchorageak99503": {
+  "lat": 61.1999563,
+  "lng": -149.9061732,
+  "matched": "Bosco's, 2301, Spenard Road, Spenard, Romig Park, Anchorage, Alaska, 99503, United States"
+ },
+ "230pioneertrailchaskamn55318": {
+  "lat": 44.8284692,
+  "lng": -93.5992428,
+  "matched": "230, Pioneer Trail, Hazeltine, Chaska, Carver County, Minnesota, 55318, United States"
+ },
+ "2345russellvillerdbowlinggreenky42101": {
+  "lat": 36.9699593,
+  "lng": -86.4790792,
+  "matched": "2345, Russellville Road, Springhill, Bowling Green, Warren County, Kentucky, 42101, United States"
+ },
+ "2438wandersonlnb1austintx78757": {
+  "lat": 30.3580392,
+  "lng": -97.732797,
+  "matched": "Dragon's Lair Comics & Fantasy Austin, 2438, West Anderson Lane, Allandale, Austin, Travis County, Texas, 78757, United States"
+ },
+ "2512easternblvdsuite25yorkpa17402": {
+  "lat": 39.9729475,
+  "lng": -76.6768344,
+  "matched": "2512, Eastern Boulevard, East York, Springettsbury Township, York County, Pennsylvania, 17402, United States"
+ },
+ "2911broadwaynewyorkny10025": {
+  "lat": 40.8065464,
+  "lng": -73.9653039,
+  "matched": "Hex & Co, 2911, Broadway, Morningside Heights, Manhattan Community Board 9, Manhattan, New York County, New York, 10025, United States"
+ },
+ "2945renfrewstvancouverbcv5m3k5": {
+  "lat": 49.2577217,
+  "lng": -123.0446398,
+  "matched": "The Connection Games and Comics, 2945, Renfrew Street, Renfrew-Collingwood, Vancouver, Metro Vancouver Regional District, British Columbia, V5M 3K5, Canada"
+ },
+ "3173mainstvancouverbcv5t4r2": {},
+ "318n18thaveeduluthmn55812": {
+  "lat": 46.8065898,
+  "lng": -92.0795765,
+  "matched": "The Loch Café & Games, 318, North 18th Avenue East, Endion, Chester Park-UMD, East Duluth, Duluth, Saint Louis County, Minnesota, 55812, United States"
+ },
+ "320nashlandavelexingtonky40509": {
+  "lat": 38.0393056,
+  "lng": -84.4781639,
+  "matched": "Swim Bike Run, 320, North Ashland Avenue, Woodlands, Lexington Manor, Lexington, Fayette County, Kentucky, 40502, United States"
+ },
+ "3274coastmeridianrdportcoquitlambcv3b3n4": {
+  "lat": 49.2530745,
+  "lng": -122.7622798,
+  "matched": "Coast Meridian Road, Mary Hill, Port Coquitlam, Metro Vancouver Regional District, British Columbia, V3C 4P2, Canada"
+ },
+ "32essexstguelphonn1h3k8": {
+  "lat": 43.5411814,
+  "lng": -80.248959,
+  "matched": "32, Essex Street, Downtown - Sunny Acres, Guelph, Southwestern Ontario, Ontario, N1H 3K8, Canada"
+ },
+ "349moodystwalthamma02453": {
+  "lat": 42.3703207,
+  "lng": -71.2371795,
+  "matched": "Game Underground - Arcade, 349, Moody Street, The Chemistry, Waltham, Middlesex County, Massachusetts, 02453, United States"
+ },
+ "36451stavesecedarrapidsia52402": {
+  "lat": 42.0153072,
+  "lng": -91.633422,
+  "matched": "First Turn Games, 3645, 1st Avenue East, Town & Country Shopping Center, Cedar Rapids, Linn County, Iowa, 52402, United States"
+ },
+ "3959wilshireblvdstea9losangelesca90010": {
+  "lat": 34.0618793,
+  "lng": -118.3134813,
+  "matched": "Awesome Coffee, 3959, Wilshire Boulevard, Windsor Square, Koreatown, Los Angeles, Los Angeles County, California, 90010, United States"
+ },
+ "4003plainfieldnapervillerd113": {
+  "lat": 41.6959533,
+  "lng": -88.1673279,
+  "matched": "Chupacabra Games, 4003, Plainfield-Naperville Road, Naperville, Wheatland Township, Will County, Illinois, 60564, United States"
+ },
+ "4107oleanderdrstedwilmingtonnc28403": {
+  "lat": 34.2121201,
+  "lng": -77.8945644,
+  "matched": "Pizzetta’s Pizzeria, 4107, Oleander Drive, Winter Park, Wilmington, New Hanover County, North Carolina, 28403, United States"
+ },
+ "4250cerrillosrdsantafenm87507": {
+  "lat": 35.6359722,
+  "lng": -106.0146057,
+  "matched": "Santa Fe Place, 4250, Cerrillos Road, Santa Fe, Santa Fe County, New Mexico, 87507, United States"
+ },
+ "4357minnehahaaveminneapolismn55406": {
+  "lat": 44.9235396,
+  "lng": -93.2165686,
+  "matched": "Dumpster Cat Games, 4357, Minnehaha Avenue, Hiawatha, Longfellow, Minneapolis, Hennepin County, Minnesota, 55406, United States"
+ },
+ "4419sfloridaavelakelandfl33813": {
+  "lat": 27.9853246,
+  "lng": -81.9569935,
+  "matched": "4419, South Florida Avenue, Fountain Heights, Lakeland, Polk County, Florida, 33813, United States"
+ },
+ "45610yalerdchilliwackbcv2p2n2": {
+  "lat": 49.16068,
+  "lng": -121.9587529,
+  "matched": "Yale Road, Chilliwack, Kent, Fraser Valley Regional District, British Columbia, V2P 2N4, Canada"
+ },
+ "4672cottagegroverdmadisonwi53716": {
+  "lat": 43.0843059,
+  "lng": -89.3016463,
+  "matched": "4672, Cottage Grove Road, Rolling Meadows, Madison, Dane County, Wisconsin, 53716, United States"
+ },
+ "4unionsquareenewyorkny10003": {
+  "lat": 40.7354443,
+  "lng": -73.9897239,
+  "matched": "4, Union Square East, Union Square, Manhattan Community Board 5, Manhattan, New York County, New York, 10003, United States"
+ },
+ "502nankenyblvdsuite9ankenyia50023": {
+  "lat": 41.7359965,
+  "lng": -93.6011886,
+  "matched": "Amigos Mexican Grill, 502, North Ankeny Boulevard, Ankeny, Polk County, Iowa, 50023, United States"
+ },
+ "5153merchantstreetbristolbs13ee": {},
+ "542comoxrdcourtenaybcv9n3p6": {
+  "lat": 49.6934327,
+  "lng": -124.9918812,
+  "matched": "Colossal Cards & Collectables, 542, Comox Road, Courtenay, Comox Valley Regional District, British Columbia, V9N 3P5, Canada"
+ },
+ "584yongesttorontoonm4y1z3": {
+  "lat": 43.6652266,
+  "lng": -79.3848483,
+  "matched": "Kung Fu Tea, 584, Yonge Street, Church-Wellesley, Toronto Centre, Toronto, Golden Horseshoe, Ontario, M4Y 1Z2, Canada"
+ },
+ "5doverstcambridgecb11dy": {
+  "lat": 52.2046568,
+  "lng": 0.1328421,
+  "matched": "The Tram Depot, 2-5, Dover Street, The Kite, Petersfield, Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, England, CB1 1DY, United Kingdom"
+ },
+ "628elcaminorealsancarlosca94070": {
+  "lat": 37.4954295,
+  "lng": -122.246321,
+  "matched": "El Camino Real, San Carlos, San Mateo County, California, 94070, United States"
+ },
+ "6407citywestparkwaysuite5cedenprairie": {
+  "lat": 44.8871172,
+  "lng": -93.4177056,
+  "matched": "6407, City West Parkway, Eden Prairie, Hennepin County, Minnesota, 55344, United States"
+ },
+ "6538sloverslanerdfranklinwi53132": {
+  "lat": 42.9258683,
+  "lng": -88.0461667,
+  "matched": "6538, South Lovers Lane Road, Franklin, Milwaukee County, Wisconsin, 53132, United States"
+ },
+ "6870mansfieldrdnottinghamng13gy": {
+  "lat": 52.9584936,
+  "lng": -1.1491913,
+  "matched": "Mansfield Road, Rainbow Quarter, Hockley, St Ann's, City of Nottingham, East Midlands, England, NG1 3FB, United Kingdom"
+ },
+ "688broughtonstvictoriabcv8w1c9": {
+  "lat": 48.4241099,
+  "lng": -123.365999,
+  "matched": "688, Broughton Street, Downtown, Victoria, Capital Regional District, British Columbia, V8W 1Z9, Canada"
+ },
+ "69brooksideaveste208chesterny10918": {
+  "lat": 41.3541745,
+  "lng": -74.2810376,
+  "matched": "Quickway Plaza, 69, Brookside Avenue, Greycourt, Village of Chester, Town of Chester, Orange County, New York, 10918, United States"
+ },
+ "69newnhamstelycb74pq": {
+  "lat": 52.401247,
+  "lng": 0.2671411,
+  "matched": "The High Flyer, 69, Newnham Street, Ely, East Cambridgeshire, Cambridgeshire, Cambridgeshire and Peterborough, England, CB7 4PQ, United Kingdom"
+ },
+ "701pstsuite102lincolnne68508": {
+  "lat": 40.8144443,
+  "lng": -96.7110921,
+  "matched": "The Creamery, 701, P Street, Haymarket, Lincoln, Lancaster County, Nebraska, 68508, United States"
+ },
+ "708e3rdstclintonin47842": {
+  "lat": 39.6568816,
+  "lng": -87.3996538,
+  "matched": "South 3rd Street, Clinton, Vermillion County, Indiana, 47842, United States"
+ },
+ "711wlakestsuite103minneapolismn55408": {
+  "lat": 44.9481725,
+  "lng": -93.2888319,
+  "matched": "711, West Lake Street, South Uptown, Lyn-Lake, Bde Maka Ska-Isles, Minneapolis, Hennepin County, Minnesota, 55408, United States"
+ },
+ "7311nesandyblvdportlandor97213": {
+  "lat": 45.5490127,
+  "lng": -122.5876695,
+  "matched": "7311, Northeast Sandy Boulevard, Roseway, Portland, Multnomah County, Oregon, 97213, United States"
+ },
+ "74queenstglasgowg13ds": {
+  "lat": 55.8589684,
+  "lng": -4.25228,
+  "matched": "Queen Street, Laurieston, Merchant City, Glasgow, Glasgow City, Alba / Scotland, G1 3DS, United Kingdom"
+ },
+ "7715avpapineau103montrealquebech2e2h4": {
+  "lat": 45.55153,
+  "lng": -73.6148199,
+  "matched": "Centre Dentaire Papineau Villeray, 7715, Avenue Papineau, Villeray, Villeray–Saint-Michel–Parc-Extension, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2E 1C7, Canada"
+ },
+ "781eelcaminorealsuite100sunnyvaleca94087": {
+  "lat": 37.3574989,
+  "lng": -122.018331,
+  "matched": "CardArt, 781, East El Camino Real, Sunnyvale, Santa Clara County, California, 94087, United States"
+ },
+ "792wnorthlandaveappletonwi54914": {
+  "lat": 44.2874228,
+  "lng": -88.4181675,
+  "matched": "792, West Northland Avenue, Appleton, Outagamie County, Wisconsin, 54914, United States"
+ },
+ "81davisdrnewmarketonl3y2m9": {
+  "lat": 44.055896,
+  "lng": -79.4766736,
+  "matched": "81, Davis Drive, Newmarket Heights, Newmarket, York Region, Golden Horseshoe, Ontario, L3Y 2P1, Canada"
+ },
+ "8241brucevillerd190sacramentoca95823": {
+  "lat": 38.4591406,
+  "lng": -121.417115,
+  "matched": "8241, Bruceville Road, Valley Hi / North Laguna, Sacramento, Sacramento County, California, 95823, United States"
+ },
+ "8800scoloradoblvdhighlandsranchco80126": {
+  "lat": 39.5571712,
+  "lng": -104.9411105,
+  "matched": "Enchanted Grounds, 8800, South Colorado Boulevard, Highlands Ranch, Douglas County, Colorado, 80126, United States"
+ },
+ "922nkillingsworthstportlandor97217": {
+  "lat": 45.562506,
+  "lng": -122.6765071,
+  "matched": "922, North Killingsworth Street, Humboldt, Portland, Multnomah County, Oregon, 97217, United States"
+ },
+ "963centralavegreenwoodnsb0p1n0": {
+  "lat": 44.9681142,
+  "lng": -64.9249969,
+  "matched": "Greenwood Mall, 963, Central Avenue, Greenwood, Municipality of the County of Kings, Kings County, Nova Scotia, B0P 1N0, Canada"
+ },
+ "9queensrdbelfastbt39dt": {
+  "lat": 54.6070772,
+  "lng": -5.9092334,
+  "matched": "Queens Road, Titanic Quarter, Queen's Island, Belfast City District, County Down, Northern Ireland / Tuaisceart Éireann, BT3 9DT, United Kingdom"
+ },
+ "avdugrey11004lausanne": {
+  "lat": 46.5317482,
+  "lng": 6.6172631,
+  "matched": "1, Avenue du Grey, Lausanne, District de Lausanne, Vaud, 1004, Schweiz/Suisse/Svizzera/Svizra"
+ },
+ "dennewitzstrae710785berlin": {
+  "lat": 52.4991969,
+  "lng": 13.369386,
+  "matched": "7, Dennewitzstraße, Tiergarten, Mitte, Berlin, 10785, Deutschland"
+ },
+ "drurystglasgowg25aa": {
+  "lat": 55.8609599,
+  "lng": -4.256136,
+  "matched": "Drury Street, Blythswood Hill, Glasgow, Glasgow City, Alba / Scotland, G2 5AA, United Kingdom"
+ },
+ "findorffstrae10528215bremen": {
+  "lat": 53.0900843,
+  "lng": 8.8132518,
+  "matched": "105, Findorffstraße, Findorff-Bürgerweide, Findorff, Bremen-West, Bremen, 28215, Deutschland"
+ },
+ "gazertstrae2621075hamburg": {
+  "lat": 53.4620664,
+  "lng": 9.9659463,
+  "matched": "26, Gazertstraße, Heimfeld, Harburg, Hamburg, 21075, Deutschland"
+ },
+ "haarenstrae4326122oldenburg": {
+  "lat": 53.1407785,
+  "lng": 8.21004,
+  "matched": "43, Haarenstraße, Burgstraßenviertel, Innenstadt, 1. Bezirk, Oldenburg, Niedersachsen, 26122, Deutschland"
+ },
+ "lyngbystorcenter12800kongenslyngby": {},
+ "neustrae1154290trier": {
+  "lat": 49.7527916,
+  "lng": 6.6390767,
+  "matched": "11, Neustraße, Altstadt, Mitte-Gartenfeld, Trier, Trierweiler, Rheinland-Pfalz, 54290, Deutschland"
+ },
+ "papitzerstr403046cottbusgermany": {
+  "lat": 51.7658336,
+  "lng": 14.320398,
+  "matched": "Gästehaus, 4, Papitzer Straße, Ströbitz, Cottbus - Chóśebuz, Brandenburg, 03046, Deutschland"
+ },
+ "semiahmoomall1711152st134surreybcv4a4n3": {},
+ "therunningskingsditchlncheltenhamgl519nj": {},
+ "unit2themountstationrdnorthstowecambridgecb243ds": {}
+}
