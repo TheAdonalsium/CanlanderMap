@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Canadian Highlander — where to play</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root {
+    --ink: #16181b;
+    --soft: #5f666e;
+    --paper: #f7f8f8;
+    --line: #dcdfe2;
+    --focus: #1864ab;
+    --warn: #a4600a;
+
+    --c-us: #1864ab;
+    --c-ca: #c92a2a;
+    --c-gb: #5f3dc4;
+    --c-de: #2b8a3e;
+    --c-dk: #e67700;
+    --c-ch: #0b7285;
+    --c-xx: #495057;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex;
+    flex-direction: column;
+    font: 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 10px 16px 11px;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+  }
+  h1 { margin: 0; font-size: 13px; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; }
+  #count {
+    font: 12px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: var(--soft);
+    font-variant-numeric: tabular-nums;
+  }
+  #progress {
+    position: absolute; left: 0; bottom: -1px;
+    height: 2px; width: 0; background: var(--focus);
+    transition: width .25s linear;
+  }
+  @media (prefers-reduced-motion: reduce) { #progress { transition: none; } }
+
+  .legend { display: flex; gap: 6px; flex-wrap: wrap; }
+  .key {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 3px 10px 3px 7px;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: #fff; font-size: 12px; color: var(--soft); cursor: pointer;
+  }
+  .key:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .key[aria-pressed="true"]  { color: var(--ink); border-color: #b7bcc1; }
+  .key[aria-pressed="false"] { opacity: .4; }
+  .key .swatch { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .key .n { font: 11px/1 ui-monospace, Menlo, monospace; font-variant-numeric: tabular-nums; }
+
+  .spacer { margin-left: auto; }
+  input[type="search"] {
+    padding: 5px 10px; width: 210px; font: inherit; font-size: 13px;
+    border: 1px solid var(--line); border-radius: 4px; background: #fff; color: inherit;
+  }
+  input:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+
+  #map { flex: 1; background: #e8ecef; }
+
+  /* ------------------------------------------------------------- popups */
+
+  .leaflet-popup-content { margin: 13px 15px; font: inherit; min-width: 230px; }
+  .pop-store { font-size: 15px; font-weight: 640; line-height: 1.3; }
+  .pop-where { color: var(--soft); font-size: 12.5px; margin-top: 1px; }
+  .pop-when {
+    margin: 9px 0 0; padding: 7px 0 0;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+  }
+  .pop-when .day { font-weight: 560; }
+  .pop-when .time { color: var(--soft); }
+  .pop-desc { margin-top: 7px; font-size: 13px; }
+  .pop-foot {
+    margin-top: 9px; padding-top: 7px;
+    border-top: 1px solid var(--line);
+    font-size: 11.5px; color: var(--soft);
+    display: flex; flex-wrap: wrap; gap: 4px 10px;
+  }
+  .pop-foot .stale { color: var(--warn); }
+  .leaflet-popup-content a { color: var(--focus); }
+
+  footer {
+    display: flex; align-items: center; gap: 14px;
+    padding: 7px 16px; background: #fff;
+    border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--soft);
+  }
+  #issues { color: #c92a2a; background: none; border: 0; padding: 0; font: inherit; cursor: pointer; text-decoration: underline; }
+  #panel {
+    position: absolute; inset: auto 16px 56px 16px; max-height: 40%;
+    overflow: auto; padding: 14px 16px; background: #fff;
+    border: 1px solid var(--line); border-radius: 6px;
+    box-shadow: 0 6px 22px rgba(0,0,0,.13); z-index: 900; font-size: 13px;
+  }
+  #panel[hidden] { display: none; }
+  #panel h2 { margin: 0 0 8px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+
+  @media (max-width: 680px) {
+    .spacer { margin-left: 0; width: 100%; }
+    input[type="search"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Paper Canadian Highlander</h1>
+  <span id="count">—</span>
+  <div class="legend" id="legend"></div>
+  <span class="spacer"></span>
+  <input id="search" type="search" placeholder="Store, city, or format notes" aria-label="Filter stores" autocomplete="off">
+  <div id="progress"></div>
+</header>
+
+<div id="map"></div>
+
+<div id="panel" hidden>
+  <h2>Not on the map</h2>
+  <ul id="panel-list"></ul>
+  <button id="panel-close">Close</button>
+</div>
+
+<footer>
+  <span id="status">Loading…</span>
+  <button id="issues" hidden></button>
+  <span style="margin-left:auto">Tiles &amp; geocoding: OpenStreetMap</span>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+/* --------------------------------------------------------------------------
+   Reads data/locations.csv.
+
+   Normal case: the build script has already flattened the sheet and added
+   lat/lng, so this file just draws. If you drop a raw sheet export in instead
+   (country banner rows, blank spacers, no coordinates) it handles that too and
+   geocodes in the browser, which is slow but fine for a local look.
+   -------------------------------------------------------------------------- */
+
+const DATA_URL = 'data/locations.csv';
+const GEOCODE_DELAY_MS = 1100;
+const CACHE_KEY = 'chl-map-cache-v1';
+
+const COLORS = {
+  us: 'var(--c-us)', ca: 'var(--c-ca)', gb: 'var(--c-gb)',
+  de: 'var(--c-de)', dk: 'var(--c-dk)', ch: 'var(--c-ch)',
+};
+const CODES = {
+  'usa': 'us', 'united states': 'us', 'canada': 'ca', 'uk': 'gb',
+  'united kingdom': 'gb', 'germany': 'de', 'denmark': 'dk', 'switzerland': 'ch',
+};
+const colorFor = (code) => COLORS[code] || 'var(--c-xx)';
+
+let STORES = [];
+let MISSING = [];
+const activeCountries = new Set();
+const cache = loadCache();
+
+const map = L.map('map', { worldCopyJump: true }).setView([40, -20], 3);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 19,
+}).addTo(map);
+const layer = L.layerGroup().addTo(map);
+
+start();
+
+async function start() {
+  let rows;
+  try {
+    const res = await fetch(DATA_URL);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    rows = parseSheet(parseCsv(await res.text()));
+  } catch (err) {
+    setStatus('Could not load ' + DATA_URL + ' — ' + err.message);
+    return;
+  }
+
+  if (!rows.length) { setStatus('No stores found in the data file.'); return; }
+
+  rows.forEach(r => activeCountries.add(r.country));
+  STORES = rows.filter(r => r.lat != null);
+  const pending = rows.filter(r => r.lat == null);
+
+  buildLegend();
+  draw();
+  fitAll();
+
+  if (!pending.length) { finish(rows.length); return; }
+
+  setStatus('No coordinates in the file — geocoding ' + pending.length +
+            ' addresses in the browser. This is the slow path.');
+
+  for (let i = 0; i < pending.length; i++) {
+    const rec = pending[i];
+    const hit = await geocode(rec);
+    if (hit) { Object.assign(rec, hit); STORES.push(rec); draw(); }
+    else MISSING.push(rec);
+    setProgress((i + 1) / pending.length);
+    if (i < pending.length - 1) await sleep(GEOCODE_DELAY_MS);
+  }
+  saveCache();
+  finish(rows.length);
+}
+
+function finish(total) {
+  setProgress(1);
+  setTimeout(() => setProgress(0), 700);
+  buildLegend();
+  draw();
+  fitAll();
+  setStatus(STORES.length + ' of ' + total + ' stores mapped');
+
+  if (MISSING.length) {
+    const b = document.getElementById('issues');
+    b.hidden = false;
+    b.textContent = MISSING.length + ' without coordinates';
+    b.onclick = () => {
+      document.getElementById('panel-list').innerHTML =
+        MISSING.map(m => '<li>' + esc(m.store || m.location) + ' — ' + esc(m.address) + '</li>').join('');
+      document.getElementById('panel').hidden = false;
+    };
+  }
+}
+
+/* ------------------------------------------------------------------ parsing */
+
+function parseSheet(table) {
+  if (!table.length) return [];
+
+  const raw = table[0].map(h => (h || '').trim());
+  const h = {};
+  raw.forEach((name, i) => { if (name) h[name.toLowerCase()] = i; });
+
+  const get = (row, ...names) => {
+    for (const n of names) {
+      if (n in h && h[n] < row.length) return (row[h[n]] || '').trim();
+    }
+    return '';
+  };
+
+  const out = [];
+  let banner = '';
+
+  for (const row of table.slice(1)) {
+    if (!row.some(c => (c || '').trim())) continue;      // spacer row
+
+    const label = (row[0] || '').trim();
+    const address = get(row, 'address');
+
+    // A label with no address is a country banner row.
+    if (label && !address) { banner = label; continue; }
+    if (!address) continue;
+
+    const country = get(row, 'country') || lastPart(label) || banner;
+    const code = get(row, 'country_code') || CODES[country.toLowerCase()] || '';
+
+    const lat = numOrNull(get(row, 'lat', 'latitude'));
+    const lng = numOrNull(get(row, 'lng', 'lon', 'longitude'));
+    const cached = cache[key(address)];
+
+    out.push({
+      location: label,
+      store: get(row, 'store'),
+      address,
+      country: country || 'Other',
+      code,
+      day: get(row, 'day', 'day/frequency', 'frequency'),
+      time: get(row, 'time'),
+      organizer: get(row, 'organizer'),
+      description: get(row, 'description'),
+      verified: get(row, 'last_verified', 'last verified'),
+      lat: lat != null ? lat : (cached ? cached.lat : null),
+      lng: lng != null ? lng : (cached ? cached.lng : null),
+    });
+  }
+  return out;
+}
+
+function lastPart(label) {
+  const parts = (label || '').split(',').map(s => s.trim()).filter(Boolean);
+  return parts.length ? parts[parts.length - 1] : '';
+}
+
+/* ---------------------------------------------------------------- geocoding */
+
+async function geocode(rec) {
+  let q = rec.address;
+  if (rec.country && !q.toLowerCase().includes(rec.country.toLowerCase())) {
+    q += ', ' + rec.country;
+  }
+  try {
+    const url = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1' +
+                (rec.code ? '&countrycodes=' + rec.code : '') +
+                '&q=' + encodeURIComponent(q);
+    const hits = await (await fetch(url)).json();
+    if (hits.length) {
+      const out = { lat: parseFloat(hits[0].lat), lng: parseFloat(hits[0].lon) };
+      cache[key(rec.address)] = out;
+      return out;
+    }
+  } catch (e) { /* fall through to null */ }
+  return null;
+}
+
+/* ------------------------------------------------------------------- render */
+
+function draw() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  layer.clearLayers();
+  let shown = 0;
+
+  STORES.forEach(rec => {
+    if (!activeCountries.has(rec.country)) return;
+    if (q && !matches(rec, q)) return;
+
+    if (!rec.marker) {
+      rec.marker = L.circleMarker([rec.lat, rec.lng], {
+        radius: 6, weight: 1.6, color: '#fff',
+        fillColor: colorFor(rec.code), fillOpacity: .92,
+      }).bindPopup(() => popup(rec), { maxWidth: 320 });
+    }
+    rec.marker.addTo(layer);
+    shown++;
+  });
+
+  document.getElementById('count').textContent =
+    shown === STORES.length ? STORES.length + ' stores' : shown + ' / ' + STORES.length + ' stores';
+}
+
+function matches(rec, q) {
+  return ['store', 'location', 'address', 'description', 'day', 'organizer']
+    .some(f => (rec[f] || '').toLowerCase().includes(q));
+}
+
+function popup(rec) {
+  let h = '<div class="pop-store">' + esc(rec.store || rec.location) + '</div>';
+  h += '<div class="pop-where">' + esc(rec.address) + '</div>';
+
+  if (rec.day || rec.time) {
+    h += '<div class="pop-when"><span class="day">' + esc(rec.day || 'Schedule unlisted') + '</span>';
+    if (rec.time) h += ' <span class="time">&middot; ' + esc(rec.time) + '</span>';
+    h += '</div>';
+  }
+  if (rec.description) h += '<div class="pop-desc">' + esc(rec.description) + '</div>';
+
+  const foot = [];
+  if (rec.organizer) foot.push(organizerHtml(rec.organizer));
+  foot.push(rec.verified
+    ? '<span class="' + (isStale(rec.verified) ? 'stale' : '') + '">Verified ' + esc(rec.verified) + '</span>'
+    : '<span class="stale">Unverified</span>');
+  foot.push('<a href="https://www.google.com/maps/search/?api=1&query=' +
+            rec.lat + ',' + rec.lng + '" target="_blank" rel="noopener">Directions</a>');
+
+  return h + '<div class="pop-foot">' + foot.join('') + '</div>';
+}
+
+function organizerHtml(v) {
+  return /^https?:\/\//i.test(v)
+    ? '<a href="' + esc(v) + '" target="_blank" rel="noopener">' +
+      (/discord/i.test(v) ? 'Discord' : 'Link') + '</a>'
+    : '<span>' + esc(v) + '</span>';
+}
+
+function isStale(dateText) {
+  const t = Date.parse(dateText);
+  if (isNaN(t)) return false;
+  return (Date.now() - t) > 365 * 24 * 3600 * 1000;
+}
+
+function fitAll() {
+  const pts = STORES.filter(r => activeCountries.has(r.country)).map(r => [r.lat, r.lng]);
+  if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(0.07));
+}
+
+function buildLegend() {
+  const counts = {};
+  STORES.forEach(r => { counts[r.country] = (counts[r.country] || 0) + 1; });
+
+  const el = document.getElementById('legend');
+  el.innerHTML = '';
+  Object.keys(counts).sort((a, b) => counts[b] - counts[a]).forEach(country => {
+    const code = (STORES.find(r => r.country === country) || {}).code;
+    const b = document.createElement('button');
+    b.className = 'key';
+    b.type = 'button';
+    b.setAttribute('aria-pressed', activeCountries.has(country) ? 'true' : 'false');
+    b.innerHTML = '<span class="swatch" style="background:' + colorFor(code) + '"></span>' +
+                  esc(country) + ' <span class="n">' + counts[country] + '</span>';
+    b.onclick = () => {
+      const on = b.getAttribute('aria-pressed') === 'true';
+      b.setAttribute('aria-pressed', String(!on));
+      on ? activeCountries.delete(country) : activeCountries.add(country);
+      draw();
+    };
+    el.appendChild(b);
+  });
+}
+
+document.getElementById('search').addEventListener('input', draw);
+document.getElementById('panel-close').onclick =
+  () => { document.getElementById('panel').hidden = true; };
+
+/* --------------------------------------------------------------------- util */
+
+function setStatus(t) { document.getElementById('status').textContent = t; }
+function setProgress(f) { document.getElementById('progress').style.width = (f * 100) + '%'; }
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+function key(s) { return String(s).toLowerCase().replace(/[^a-z0-9]/g, ''); }
+function numOrNull(v) { const n = parseFloat(v); return isFinite(n) ? n : null; }
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+}
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [], cell = '', quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (quoted) {
+      if (c === '"') { if (text[i+1] === '"') { cell += '"'; i++; } else quoted = false; }
+      else cell += c;
+    }
+    else if (c === '"') quoted = true;
+    else if (c === ',') { row.push(cell); cell = ''; }
+    else if (c === '\n') { row.push(cell); rows.push(row); row = []; cell = ''; }
+    else if (c !== '\r') cell += c;
+  }
+  if (cell || row.length) { row.push(cell); rows.push(row); }
+  return rows;
+}
+
+function loadCache() {
+  try { return JSON.parse(localStorage.getItem(CACHE_KEY) || '{}'); }
+  catch (e) { return {}; }
+}
+function saveCache() {
+  try { localStorage.setItem(CACHE_KEY, JSON.stringify(cache)); } catch (e) {}
+}
+</script>
+</body>
+</html>
