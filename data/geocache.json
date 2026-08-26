@@ -1,2 +1,442 @@
 {
+ "1013chestnutlnsuite120matthewsnc28104": {
+  "lat": 35.069759,
+  "lng": -80.6978283,
+  "precision": "address"
+ },
+ "1065readingrdmasonoh45040": {
+  "lat": 39.3521519,
+  "lng": -84.3211119,
+  "precision": "address"
+ },
+ "11406bgeorgiaavesuitebsilverspringmd20902": {
+  "lat": 39.0229238,
+  "lng": -77.0451955,
+  "precision": "address"
+ },
+ "1167providencerd4whitinsvillema01588": {
+  "lat": 42.1028269,
+  "lng": -71.6404571,
+  "precision": "address"
+ },
+ "120713thstsuiteksnohomishwa98290": {
+  "lat": 47.9270282,
+  "lng": -122.0968608,
+  "precision": "address"
+ },
+ "12072brookhurststgardengroveca92840": {
+  "lat": 33.7874841,
+  "lng": -117.9585998,
+  "precision": "address"
+ },
+ "121234avese120calgaryabt2g1v7": {
+  "lat": 51.0237815,
+  "lng": -114.0372916,
+  "precision": "address"
+ },
+ "1214ottawastunit201windsoronn8x2e5": {
+  "lat": 42.3097905,
+  "lng": -83.0132664,
+  "precision": "address"
+ },
+ "12616w62ndterrace117shawneeks66216": {
+  "lat": 39.0160722,
+  "lng": -94.7311378,
+  "precision": "address"
+ },
+ "1271rickertdr135napervilleil60540": {
+  "lat": 41.7484255,
+  "lng": -88.1702862,
+  "precision": "address"
+ },
+ "135samosetstplymouthma02360": {
+  "lat": 41.9536844,
+  "lng": -70.6847534,
+  "precision": "address"
+ },
+ "1427railroadavebellinghamwa98225": {
+  "lat": 48.7510609,
+  "lng": -122.4758919,
+  "precision": "address"
+ },
+ "1450oaklandaveindianapa15725": {
+  "lat": 40.6151629,
+  "lng": -79.1675762,
+  "precision": "address"
+ },
+ "1502parkstalamedaca94501": {
+  "lat": 37.7654276,
+  "lng": -122.2416369,
+  "precision": "address"
+ },
+ "15901jeffersondavishwychesterva23834": {
+  "lat": 40.3305001,
+  "lng": -78.9183282,
+  "precision": "postcode"
+ },
+ "1615orlansboulevardottawaontariok1c7e2": {
+  "lat": 45.4603277,
+  "lng": -75.5235558,
+  "precision": "address"
+ },
+ "16520southtamiamitrailste146fortmyersfl": {
+  "lat": 26.640628,
+  "lng": -81.8723084,
+  "precision": "city"
+ },
+ "18502beachblvdunit120huntingtonbeachca92648": {
+  "lat": 33.6937878,
+  "lng": -117.9886438,
+  "precision": "address"
+ },
+ "1919peabodyrdvacavilleca95687": {
+  "lat": 38.3370302,
+  "lng": -121.9702041,
+  "precision": "address"
+ },
+ "2019greenwoodlaketurnpikeunitgwestmilfordnj07421": {
+  "lat": 41.1528385,
+  "lng": -74.3499478,
+  "precision": "address"
+ },
+ "20514108thavesekentwa98031": {
+  "lat": 47.4183392,
+  "lng": -122.1954925,
+  "precision": "address"
+ },
+ "20564hallrdclintontownshipmi48038": {
+  "lat": 42.6283141,
+  "lng": -82.9174084,
+  "precision": "address"
+ },
+ "207elmirardsuite100ithacany14850": {
+  "lat": 42.4301412,
+  "lng": -76.5034584,
+  "precision": "address"
+ },
+ "209emainstcollinsvilleil62234": {
+  "lat": 38.6708409,
+  "lng": -89.9844609,
+  "precision": "address"
+ },
+ "2172speersrdoakvilleonl6l2x8": {
+  "lat": 43.4135219,
+  "lng": -79.7213663,
+  "precision": "address"
+ },
+ "21smainstipswichma01938": {
+  "lat": 42.6794676,
+  "lng": -70.8371046,
+  "precision": "address"
+ },
+ "2220bowenroadnanaimobcv9s1h9": {
+  "lat": 49.1930329,
+  "lng": -123.9920194,
+  "precision": "address"
+ },
+ "2301spenardrdanchorageak99503": {
+  "lat": 61.1999563,
+  "lng": -149.9061732,
+  "precision": "address"
+ },
+ "230pioneertrailchaskamn55318": {
+  "lat": 44.8283726,
+  "lng": -93.6096566,
+  "precision": "address"
+ },
+ "2345russellvillerdbowlinggreenky42101": {
+  "lat": 36.9699593,
+  "lng": -86.4790792,
+  "precision": "address"
+ },
+ "2438wandersonlnb1austintx78757": {
+  "lat": 30.3580392,
+  "lng": -97.732797,
+  "precision": "address"
+ },
+ "2512easternblvdsuite25yorkpa17402": {
+  "lat": 39.9729475,
+  "lng": -76.6768344,
+  "precision": "address"
+ },
+ "2911broadwaynewyorkny10025": {
+  "lat": 40.8065464,
+  "lng": -73.9653039,
+  "precision": "address"
+ },
+ "2945renfrewstvancouverbcv5m3k5": {
+  "lat": 49.2577217,
+  "lng": -123.0446398,
+  "precision": "address"
+ },
+ "3173mainstvancouverbcv5t4r2": {
+  "lat": 49.2570047,
+  "lng": -123.1014843,
+  "precision": "address"
+ },
+ "318n18thaveeduluthmn55812": {
+  "lat": 46.8065898,
+  "lng": -92.0795765,
+  "precision": "address"
+ },
+ "320nashlandavelexingtonky40509": {
+  "lat": 38.0393056,
+  "lng": -84.4781639,
+  "precision": "address"
+ },
+ "3274coastmeridianrdportcoquitlambcv3b3n4": {
+  "lat": 49.2529778,
+  "lng": -122.7621787,
+  "precision": "address"
+ },
+ "32essexstguelphonn1h3k8": {
+  "lat": 43.5410881,
+  "lng": -80.2490703,
+  "precision": "address"
+ },
+ "349moodystwalthamma02453": {
+  "lat": 42.3703207,
+  "lng": -71.2371795,
+  "precision": "address"
+ },
+ "36451stavesecedarrapidsia52402": {
+  "lat": 42.0153072,
+  "lng": -91.633422,
+  "precision": "address"
+ },
+ "3959wilshireblvdstea9losangelesca90010": {
+  "lat": 34.0618793,
+  "lng": -118.3134813,
+  "precision": "address"
+ },
+ "4003plainfieldnapervillerd113": {
+  "lat": 41.6959533,
+  "lng": -88.1673279,
+  "precision": "address"
+ },
+ "4107oleanderdrstedwilmingtonnc28403": {
+  "lat": 34.2121201,
+  "lng": -77.8945644,
+  "precision": "address"
+ },
+ "4250cerrillosrdsantafenm87507": {
+  "lat": 35.6359722,
+  "lng": -106.0146057,
+  "precision": "address"
+ },
+ "4357minnehahaaveminneapolismn55406": {
+  "lat": 44.9235396,
+  "lng": -93.2165686,
+  "precision": "address"
+ },
+ "4419sfloridaavelakelandfl33813": {
+  "lat": 27.9853246,
+  "lng": -81.9569935,
+  "precision": "address"
+ },
+ "45610yalerdchilliwackbcv2p2n2": {
+  "lat": 49.1637021,
+  "lng": -121.9590538,
+  "precision": "address"
+ },
+ "4672cottagegroverdmadisonwi53716": {
+  "lat": 43.0843082,
+  "lng": -89.3016453,
+  "precision": "address"
+ },
+ "4unionsquareenewyorkny10003": {
+  "lat": 40.7354443,
+  "lng": -73.9897239,
+  "precision": "address"
+ },
+ "502nankenyblvdsuite9ankenyia50023": {
+  "lat": 41.7361572,
+  "lng": -93.6009534,
+  "precision": "address"
+ },
+ "5153merchantstreetbristolbs13ee": {
+  "lat": 51.4570011,
+  "lng": -2.5885994,
+  "precision": "address"
+ },
+ "542comoxrdcourtenaybcv9n3p6": {
+  "lat": 49.6934327,
+  "lng": -124.9918812,
+  "precision": "address"
+ },
+ "584yongesttorontoonm4y1z3": {
+  "lat": 43.6652266,
+  "lng": -79.3848483,
+  "precision": "address"
+ },
+ "5doverstcambridgecb11dy": {
+  "lat": 52.2046568,
+  "lng": 0.1328421,
+  "precision": "address"
+ },
+ "628elcaminorealsancarlosca94070": {
+  "lat": 37.4950015,
+  "lng": -122.2458325,
+  "precision": "address"
+ },
+ "6407citywestparkwaysuite5cedenprairie": {
+  "lat": 44.8871172,
+  "lng": -93.4177056,
+  "precision": "address"
+ },
+ "6538sloverslanerdfranklinwi53132": {
+  "lat": 42.9258683,
+  "lng": -88.0461667,
+  "precision": "address"
+ },
+ "6870mansfieldrdnottinghamng13gy": {
+  "lat": 52.9584936,
+  "lng": -1.1491913,
+  "precision": "address"
+ },
+ "688broughtonstvictoriabcv8w1c9": {
+  "lat": 48.4241099,
+  "lng": -123.365999,
+  "precision": "address"
+ },
+ "69brooksideaveste208chesterny10918": {
+  "lat": 41.3541745,
+  "lng": -74.2810376,
+  "precision": "address"
+ },
+ "69newnhamstelycb74pq": {
+  "lat": 52.401247,
+  "lng": 0.2671411,
+  "precision": "address"
+ },
+ "701pstsuite102lincolnne68508": {
+  "lat": 40.8144443,
+  "lng": -96.7110921,
+  "precision": "address"
+ },
+ "708e3rdstclintonin47842": {
+  "lat": 39.6568816,
+  "lng": -87.3996538,
+  "precision": "address"
+ },
+ "711wlakestsuite103minneapolismn55408": {
+  "lat": 44.9481725,
+  "lng": -93.2888319,
+  "precision": "address"
+ },
+ "7311nesandyblvdportlandor97213": {
+  "lat": 45.5490127,
+  "lng": -122.5876695,
+  "precision": "address"
+ },
+ "74queenstglasgowg13ds": {
+  "lat": 55.8589684,
+  "lng": -4.25228,
+  "precision": "address"
+ },
+ "7715avpapineau103montrealquebech2e2h4": {
+  "lat": 45.55153,
+  "lng": -73.6148199,
+  "precision": "address"
+ },
+ "781eelcaminorealsuite100sunnyvaleca94087": {
+  "lat": 37.3574989,
+  "lng": -122.018331,
+  "precision": "address"
+ },
+ "792wnorthlandaveappletonwi54914": {
+  "lat": 44.2874302,
+  "lng": -88.4188133,
+  "precision": "address"
+ },
+ "81davisdrnewmarketonl3y2m9": {
+  "lat": 44.055896,
+  "lng": -79.4766736,
+  "precision": "address"
+ },
+ "8241brucevillerd190sacramentoca95823": {
+  "lat": 38.4588787,
+  "lng": -121.4171955,
+  "precision": "address"
+ },
+ "8800scoloradoblvdhighlandsranchco80126": {
+  "lat": 39.5571712,
+  "lng": -104.9411105,
+  "precision": "address"
+ },
+ "922nkillingsworthstportlandor97217": {
+  "lat": 45.562506,
+  "lng": -122.6765071,
+  "precision": "address"
+ },
+ "963centralavegreenwoodnsb0p1n0": {
+  "lat": 44.9681142,
+  "lng": -64.9249969,
+  "precision": "address"
+ },
+ "9queensrdbelfastbt39dt": {
+  "lat": 54.6070772,
+  "lng": -5.9092334,
+  "precision": "address"
+ },
+ "avdugrey11004lausanne": {
+  "lat": 46.5317482,
+  "lng": 6.6172631,
+  "precision": "address"
+ },
+ "dennewitzstrae710785berlin": {
+  "lat": 52.4991969,
+  "lng": 13.369386,
+  "precision": "address"
+ },
+ "drurystglasgowg25aa": {
+  "lat": 55.8609599,
+  "lng": -4.256136,
+  "precision": "address"
+ },
+ "findorffstrae10528215bremen": {
+  "lat": 53.0900843,
+  "lng": 8.8132518,
+  "precision": "address"
+ },
+ "gazertstrae2621075hamburg": {
+  "lat": 53.4620664,
+  "lng": 9.9659463,
+  "precision": "address"
+ },
+ "haarenstrae4326122oldenburg": {
+  "lat": 53.1407785,
+  "lng": 8.21004,
+  "precision": "address"
+ },
+ "lyngbystorcenter12800kongenslyngby": {
+  "lat": 55.7691233,
+  "lng": 12.5013252,
+  "precision": "poi"
+ },
+ "neustrae1154290trier": {
+  "lat": 49.7527916,
+  "lng": 6.6390767,
+  "precision": "address"
+ },
+ "papitzerstr403046cottbusgermany": {
+  "lat": 51.7658336,
+  "lng": 14.320398,
+  "precision": "address"
+ },
+ "semiahmoomall1711152st134surreybcv4a4n3": {
+  "lat": 49.0331343,
+  "lng": -122.8012875,
+  "precision": "address"
+ },
+ "therunningskingsditchlncheltenhamgl519nj": {
+  "lat": 51.9163816,
+  "lng": -2.0957902,
+  "precision": "address"
+ },
+ "unit2themountstationrdnorthstowecambridgecb243ds": {
+  "lat": 52.2929067,
+  "lng": 0.049979,
+  "precision": "address"
+ }
 }
