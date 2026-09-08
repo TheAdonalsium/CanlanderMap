@@ -1,6 +1,6 @@
 # Paper Canadian Highlander — map
 
-Static map of the store list, hosted on GitHub Pages. A scheduled action pulls
+Static map of the store list, hosted on GitHub Pages, right here:https://theadonalsium.github.io/CanlanderMap/ . A scheduled action pulls
 the Google Sheet, geocodes any new address, and redeploys.
 
 ## Files
